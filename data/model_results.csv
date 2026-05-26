@@ -1,0 +1,7 @@
+model,type,accuracy,precision_macro,recall_macro,f1_macro,roc_auc
+Surface CNN (RGB),단일,0.635,0.481,0.5937,0.5191,0.7415
+IR CNN (열화상),단일,0.6159,0.5935,0.5865,0.5602,0.8039
+Numeric ANN (공정수치),단일,0.7397,0.7525,0.7274,0.7358,0.8578
+DS Fusion,Fusion,0.7048,0.8269,0.6660,0.6471,0.8844
+Soft Voting,Fusion,0.6825,0.7974,0.6409,0.6040,0.8366
+Hard Voting,Fusion,0.6698,0.7339,0.6388,0.5875,0.8366

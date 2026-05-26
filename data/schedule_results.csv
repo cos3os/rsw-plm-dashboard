@@ -1,0 +1,5 @@
+policy,avg_makespan,improvement_pct,description
+Cost-based,8273,3.23,Risk-aware dispatching (Total Cost 내림차순)
+LPT,8350,2.33,Longest Processing Time first
+SPT,8450,1.16,Shortest Processing Time first
+Random,8549,0.00,Random dispatching (baseline)

@@ -1,0 +1,5 @@
+config,f1_score,delta
+Full (3-modal),0.661,0.00
+Surface+IR (Numeric 제외),0.730,+0.04
+IR+Numeric (Surface 제외),0.590,-0.11
+RGB+Numeric (IR 제외),0.709,+0.01

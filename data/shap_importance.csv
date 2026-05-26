@@ -1,0 +1,8 @@
+feature,mean_shap_good
+Thickness A,0.0470
+Welding Time,0.0385
+Thickness B,0.0336
+Force,0.0336
+Pressure,0.0183
+Angle,0.0146
+Current,0.0104
