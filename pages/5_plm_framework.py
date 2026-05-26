@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="PLM 프레임워크", page_icon="🔄", layout="wide")
 
@@ -8,77 +9,66 @@ st.caption("Closed-Loop PLM · Lifecycle Cost · QCD · Information Loss — 교
 # ── Closed-Loop PLM ──
 st.subheader("🔁 Closed-Loop PLM에서의 연구 위치")
 
-st.markdown("""
-<div style="background:#111827; border:1px solid #1e2d3d; border-radius:16px; padding:2rem; margin:1rem 0">
-    <div style="display:flex; justify-content:center; gap:0.5rem; flex-wrap:wrap; align-items:stretch">
+components.html("""
+<div style="background:#111827; border:1px solid #1e2d3d; border-radius:16px; padding:2rem; margin:1rem 0; font-family:sans-serif;">
+  <div style="display:flex; justify-content:center; gap:0.5rem; flex-wrap:wrap; align-items:stretch;">
 
-        <div style="width:200px; padding:1rem; border:2px solid #3b82f6; border-radius:12px;
-                    background:rgba(59,130,246,0.08); position:relative">
-            <div style="position:absolute; top:-10px; right:10px; background:#3b82f6;
-                        color:#0a0e17; font-size:0.6rem; font-weight:700; padding:2px 8px; border-radius:4px">
-                본 연구
-            </div>
-            <div style="color:#3b82f6; font-weight:700; font-size:0.75rem">BOL — 설계</div>
-            <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0">설계</div>
-            <div style="background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.3);
-                        border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#e2e8f0; margin-top:0.5rem">
-                안정 공정 영역<br>(SHAP/PDP → 설계 피드백)
-            </div>
-        </div>
-
-        <div style="display:flex; align-items:center; color:#334155; font-size:1.5rem">→</div>
-
-        <div style="width:200px; padding:1rem; border:2px solid #00d4aa; border-radius:12px;
-                    background:rgba(0,212,170,0.08); position:relative">
-            <div style="position:absolute; top:-10px; right:10px; background:#00d4aa;
-                        color:#0a0e17; font-size:0.6rem; font-weight:700; padding:2px 8px; border-radius:4px">
-                본 연구 핵심
-            </div>
-            <div style="color:#00d4aa; font-weight:700; font-size:0.75rem">BOL — 생산</div>
-            <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0">생산</div>
-            <div style="background:rgba(0,212,170,0.15); border:1px solid rgba(0,212,170,0.3);
-                        border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#e2e8f0; margin-top:0.3rem">
-                멀티모달 품질 예측<br>(CNN + MLP + Fusion)
-            </div>
-            <div style="background:rgba(0,212,170,0.15); border:1px solid rgba(0,212,170,0.3);
-                        border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#e2e8f0; margin-top:0.3rem">
-                Risk-aware Scheduling<br>(비용 기반 최적화)
-            </div>
-        </div>
-
-        <div style="display:flex; align-items:center; color:#334155; font-size:1.5rem">→</div>
-
-        <div style="width:200px; padding:1rem; border:2px solid #334155; border-radius:12px;
-                    background:rgba(255,255,255,0.02); opacity:0.5">
-            <div style="color:#f59e0b; font-weight:700; font-size:0.75rem">MOL</div>
-            <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0">유지보수</div>
-            <div style="background:rgba(245,158,11,0.1); border-radius:6px; padding:0.4rem;
-                        font-size:0.7rem; color:#94a3b8; margin-top:0.5rem">
-                실시간 모니터링<br>(Digital Twin 연계)
-            </div>
-        </div>
-
-        <div style="display:flex; align-items:center; color:#334155; font-size:1.5rem">→</div>
-
-        <div style="width:200px; padding:1rem; border:2px solid #334155; border-radius:12px;
-                    background:rgba(255,255,255,0.02); opacity:0.5">
-            <div style="color:#8b5cf6; font-weight:700; font-size:0.75rem">EOL</div>
-            <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0">폐기/재활용</div>
-            <div style="background:rgba(139,92,246,0.1); border-radius:6px; padding:0.4rem;
-                        font-size:0.7rem; color:#94a3b8; margin-top:0.5rem">
-                재활용 의사결정
-            </div>
-        </div>
-
+    <div style="width:200px; padding:1rem; border:2px solid #3b82f6; border-radius:12px; background:rgba(59,130,246,0.08); position:relative;">
+      <div style="position:absolute; top:-10px; right:10px; background:#3b82f6; color:#0a0e17; font-size:0.6rem; font-weight:700; padding:2px 8px; border-radius:4px;">
+        본 연구
+      </div>
+      <div style="color:#3b82f6; font-weight:700; font-size:0.75rem;">BOL — 설계</div>
+      <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0;">설계</div>
+      <div style="background:rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.3); border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#e2e8f0; margin-top:0.5rem;">
+        안정 공정 영역<br>(SHAP/PDP → 설계 피드백)
+      </div>
     </div>
-    <div style="text-align:center; margin-top:1.5rem">
-        <div style="display:inline-block; background:rgba(0,212,170,0.1); border:1px dashed rgba(0,212,170,0.4);
-                    border-radius:8px; padding:0.5rem 2rem; color:#00d4aa; font-weight:600; font-size:0.85rem">
-            ↩️ 생산 품질 데이터 → 설계 파라미터 피드백 (안정 공정 영역) ↩️
-        </div>
+
+    <div style="display:flex; align-items:center; color:#64748b; font-size:1.5rem;">→</div>
+
+    <div style="width:200px; padding:1rem; border:2px solid #00d4aa; border-radius:12px; background:rgba(0,212,170,0.08); position:relative;">
+      <div style="position:absolute; top:-10px; right:10px; background:#00d4aa; color:#0a0e17; font-size:0.6rem; font-weight:700; padding:2px 8px; border-radius:4px;">
+        본 연구 핵심
+      </div>
+      <div style="color:#00d4aa; font-weight:700; font-size:0.75rem;">BOL — 생산</div>
+      <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0;">생산</div>
+      <div style="background:rgba(0,212,170,0.15); border:1px solid rgba(0,212,170,0.3); border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#e2e8f0; margin-top:0.3rem;">
+        멀티모달 품질 예측<br>(CNN + MLP + Fusion)
+      </div>
+      <div style="background:rgba(0,212,170,0.15); border:1px solid rgba(0,212,170,0.3); border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#e2e8f0; margin-top:0.3rem;">
+        Risk-aware Scheduling<br>(비용 기반 최적화)
+      </div>
     </div>
+
+    <div style="display:flex; align-items:center; color:#64748b; font-size:1.5rem;">→</div>
+
+    <div style="width:200px; padding:1rem; border:2px solid #334155; border-radius:12px; background:rgba(255,255,255,0.02); opacity:0.5;">
+      <div style="color:#f59e0b; font-weight:700; font-size:0.75rem;">MOL</div>
+      <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0;">유지보수</div>
+      <div style="background:rgba(245,158,11,0.1); border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#94a3b8; margin-top:0.5rem;">
+        실시간 모니터링<br>(Digital Twin 연계)
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; color:#64748b; font-size:1.5rem;">→</div>
+
+    <div style="width:200px; padding:1rem; border:2px solid #334155; border-radius:12px; background:rgba(255,255,255,0.02); opacity:0.5;">
+      <div style="color:#8b5cf6; font-weight:700; font-size:0.75rem;">EOL</div>
+      <div style="color:#e2e8f0; font-weight:700; font-size:1rem; margin:0.3rem 0;">폐기/재활용</div>
+      <div style="background:rgba(139,92,246,0.1); border-radius:6px; padding:0.4rem; font-size:0.7rem; color:#94a3b8; margin-top:0.5rem;">
+        재활용 의사결정
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:1.5rem;">
+    <div style="display:inline-block; background:rgba(0,212,170,0.1); border:1px dashed rgba(0,212,170,0.4); border-radius:8px; padding:0.5rem 2rem; color:#00d4aa; font-weight:600; font-size:0.85rem;">
+      ↩️ 생산 품질 데이터 → 설계 파라미터 피드백 (안정 공정 영역) ↩️
+    </div>
+  </div>
 </div>
-""", unsafe_allow_html=True)
+""", height=360)
 
 st.divider()
 
